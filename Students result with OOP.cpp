@@ -25,12 +25,10 @@ public:
 };
 class Student{
 private:
-
     Course total_number_of_course[MAX];
     int student_ID;
     float grade;
     double CGPA;
-
 public:
     int merit_position;
     double getcgpa()
@@ -75,7 +73,6 @@ void result(Student student[],int Student_Number,int i)
   cout<<"CGPA:"<<fixed<<setprecision(2)<<student[i].getcgpa()<<endl;
   cout<<"Merit Position:"<<student[i].merit_position<<endl;
 }
-
 int main(){
     cout<<"The number of student: ";
     int Student_Number;
@@ -90,7 +87,5 @@ int main(){
     {
        result(student,Student_Number,i);
     }
-
-
     return 0;
 }
